@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/onlinesho"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".view.LoginActivity">
+
+    <TextView
+        android:id="@+id/item_price"
+        android:text="2000$"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:textColorHint="#FCFBFB"
+            android:backgroundTint="#F44336"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Goal Name"
+                android:text="Goal Name"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:textColor="#551919"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:textColorHint="#F44336"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/goal_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:text="2000"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#551919"
+                android:textSize="18sp"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/pay_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Go2 Pay"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:layout_alignParentBottom="true"
+            android:background="#C44F76"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--    </ScrollView>-->
+</RelativeLayout>

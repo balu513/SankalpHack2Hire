@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1B1B1D"
+    android:layout_height="match_parent"
+    tools:context=".view.ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/user"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:textStyle="bold"
+        android:textSize="17sp"
+
+        android:layout_below="@+id/iv_user"
+        android:text="BALA KRISHHNA"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_saving_amt"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:text="Saving Amount : 5040$"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#E2786E"
+        android:layout_marginBottom="10dp"
+        android:text="LOGOUT"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+    </Button>
+
+
+</RelativeLayout>
